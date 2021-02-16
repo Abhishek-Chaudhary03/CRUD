@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyProject';
+
+
+  addUser(ABC: any){
+
+    console.log(ABC)
+  }
 }
+ 
