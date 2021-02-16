@@ -6,6 +6,55 @@
       "email": "abhishek21chaudhary@gmail.com",
       "password": "hgfjhjdfgjdf",
       "id": 1
+    },
+    {
+      "name": "Neha",
+      "mobile": "533554335",
+      "email": "abhishek21chaudhary.ac@gmail.com",
+      "password": "dfvffsdssa",
+      "id": 2
+    },
+    {
+      "name": "Neha",
+      "mobile": "533554335",
+      "email": "abhishek21chaudhary.ac@gmail.com",
+      "password": "dfvffsdssa",
+      "id": 3
+    },
+    {
+      "name": "Abhishek",
+      "mobile": "8305194010",
+      "email": "abhishek21chaudhary@gmail.com",
+      "password": "sfgrgr",
+      "id": 4
+    },
+    {
+      "name": "Abhishek",
+      "mobile": "8305194010",
+      "email": "abhishek21chaudhary@gmail.com",
+      "password": "sfgrgr",
+      "id": 5
+    },
+    {
+      "name": "Abhishek",
+      "mobile": "8305194010",
+      "email": "abhishek21chaudhary@gmail.com",
+      "password": "sfgrgr",
+      "id": 6
+    },
+    {
+      "name": "Abhishek",
+      "mobile": "8305194010",
+      "email": "abhishek21chaudhary@gmail.com",
+      "password": "",
+      "id": 7
+    },
+    {
+      "name": "Abhishek",
+      "mobile": "8305194010",
+      "email": "abhishek21chaudhary@gmail.com",
+      "password": "dfdftyfty",
+      "id": 8
     }
   ]
 }

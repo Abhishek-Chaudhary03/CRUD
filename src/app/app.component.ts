@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { CommonService } from './common.service';
 
@@ -6,27 +7,29 @@ import { CommonService } from './common.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'MyProject';
-  Formobj : any ;
+  Formobj: Object ="";
+  allUser: Object = "";
    
  
 constructor(private commonService:CommonService){}
-// ngOnInit(){
-//   this.getlatestUser()
-// }
+ngOnInit(){
+  this.getlatestUser()
+}
 
-  addUser(Formobj : any){
+  addUser(Formobj : Object){
    console.log(Formobj)
    this.commonService.createUser(Formobj).subscribe((response)=>{
-   //  this.getlatestUser();
-console.log("user has been loaded")
+   this.getlatestUser();
+//console.log("user has been loaded")
+
    })
   }
-  // getlatestUser(){
-  //   this.commonService.getAlluser().subscribe((response)=>{
-  //     this.allUser = response
-  //   })
+  getlatestUser(){
+    this.commonService.getAlluser().subscribe((response: Object)=>{ 
+        
+      this.allUser = response
+    })
   }
-//}
- 
+}
