@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyProject';
+  Formobj : any ;
+
+  addUser(Formobj : any){
 
 
-  addUser(ABC: any){
-
-    console.log(ABC)
+    console.log(Formobj)
   }
 }
  
