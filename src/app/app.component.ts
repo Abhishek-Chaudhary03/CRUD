@@ -29,7 +29,7 @@ ngOnInit(){
    console.log(Formobj)
    this.commonService.createUser(Formobj).subscribe((response)=>{
    this.getlatestUser();
-//console.log("user has been loaded")
+
 
    })
   }
