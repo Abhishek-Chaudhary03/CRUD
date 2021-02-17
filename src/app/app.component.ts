@@ -9,9 +9,16 @@ import { CommonService } from './common.service';
 })
 export class AppComponent  {
   title = 'MyProject';
-  Formobj: Object ="";
   allUser: Object = "";
-   
+  isEdit= false;
+  UserObj : Object= {
+  name:'',
+  mobile:'',
+  email:'',
+  password:'',
+  id:''
+  }; 
+  
  
 constructor(private commonService:CommonService){}
 ngOnInit(){
@@ -30,6 +37,21 @@ ngOnInit(){
     this.commonService.getAlluser().subscribe((response: Object)=>{ 
         
       this.allUser = response
+    })
+  }
+  editUser(user : Object){
+    this.isEdit = true;
+    this.UserObj = user;
+  }
+  deleteUser(user: Object){
+    this.commonService.deleteUser(user).subscribe(()=>{
+      this.getlatestUser();
+    })
+  }
+  updateUser(){
+    this.isEdit =!this.isEdit;
+    this.commonService.updateUser(this.UserObj).subscribe(()=>{
+      this.getlatestUser();
     })
   }
 }

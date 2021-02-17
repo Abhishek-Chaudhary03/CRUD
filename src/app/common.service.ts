@@ -8,13 +8,17 @@ export class CommonService {
 
   constructor(private _http:HttpClient) { }
 
-  createUser(user : any){
+  createUser(user:any){
     return this._http.post("http://localhost:3000/users", user);
   }
   getAlluser(){
     return this._http.get<Object>("http://localhost:3000/users")
   }
-  updateUser(){}
-  deleteUser(){} 
+ updateUser(user : any){
+   return this._http.put("http://localhost:3000/users/" +user.id, user)
+ }
+  deleteUser(user : any){
+    return this._http.delete("http://localhost:3000/users/" +user.id)
+  } 
 }
 
