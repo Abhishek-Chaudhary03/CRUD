@@ -1,17 +1,17 @@
 
-import { Component } from '@angular/core';
-import { CommonService } from './common.service';
 
+import { CommonService } from './common.service';
+import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent  {
+export class AppComponent implements OnInit  {
   title = 'MyProject';
-  allUser: Object = "";
+  allUser: any = "";
   isEdit= false;
-  UserObj : Object= {
+ public  UserObj  = {
   name:'',
   mobile:'',
   email:'',
@@ -39,11 +39,11 @@ ngOnInit(){
       this.allUser = response
     })
   }
-  editUser(user : Object){
+  editUser(user: any ){
     this.isEdit = true;
     this.UserObj = user;
   }
-  deleteUser(user: Object){
+  deleteUser(user :any ){
     this.commonService.deleteUser(user).subscribe(()=>{
       this.getlatestUser();
     })
