@@ -8,32 +8,18 @@
       "id": 2
     },
     {
-      "name": "Rohit",
-      "mobile": "132638344",
-      "email": "",
-      "password": "2335636332",
-      "id": 4
+      "name": "Akash Sharma",
+      "mobile": "5638363552",
+      "email": "Akash@gmail.com",
+      "password": "reetrfgh",
+      "id": 11
     },
     {
-      "name": "Rohit",
-      "mobile": "8305194010",
+      "name": "Abhishek",
+      "mobile": "5638363552",
       "email": "abhishek21chaudhary@gmail.com",
-      "password": "",
-      "id": 7
-    },
-    {
-      "name": "Rahul",
-      "mobile": "8305194010",
-      "email": "abhishek21chaudhary@gmail.com",
-      "password": "gfsdfxgcty",
-      "id": 8
-    },
-    {
-      "name": "Rahul",
-      "mobile": "8305194010",
-      "email": "abhishek21chaudhary@gmail.com",
-      "password": "gfsdfxgcty",
-      "id": 9
+      "password": "gsfdh",
+      "id": 17
     }
   ]
 }

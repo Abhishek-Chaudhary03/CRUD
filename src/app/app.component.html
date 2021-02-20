@@ -2,26 +2,26 @@
   <form #Form="ngForm">
     <div class="form-group">
       <label for="exampleInputEmail1">Full Name</label>
-      <input type="name" class="form-control" name= "name"  aria-describedby="name" [(ngModel)]="UserObj.name">
+      <input type="name" class="form-control" name= "name"  aria-describedby="name" [(ngModel)]="UserObj.name" required>
       
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Mobile Number</label>
-      <input type="mobile" class="form-control" name= "mobile"  aria-describedby="mobile" [(ngModel)]="UserObj.mobile">
+      <input type="mobile" class="form-control" name= "mobile"  aria-describedby="mobile" [(ngModel)]="UserObj.mobile"  required>
       
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" name= "email"  aria-describedby="email" [(ngModel)]="UserObj.email">
+      <input type="email" class="form-control" name= "email"  aria-describedby="email" [(ngModel)]="UserObj.email" required>
       
     </div>
     <div class="form-group">
       <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" name= "password" [(ngModel)]="UserObj.password"> 
+      <input type="password" class="form-control" name= "password" [(ngModel)]="UserObj.password" required> 
     </div>
     
     <button type="button" class="btn btn-primary"(click)="addUser(Form.value)"
-      *ngIf="!isEdit">Submit</button>
+      *ngIf="!isEdit" [disabled]="!Form.valid">Submit</button>
     <button type="button" class="btn btn-info" *ngIf="isEdit" (click)="updateUser()">Update</button>
   </form>
 <br>

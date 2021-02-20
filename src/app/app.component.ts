@@ -12,7 +12,7 @@ export class AppComponent implements OnInit  {
   allUser: any = "";
   isEdit= false;
  public  UserObj  = {
-  name:'',
+  name:  '',
   mobile:'',
   email:'',
   password:'',
