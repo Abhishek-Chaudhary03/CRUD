@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 
@@ -9,7 +9,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UserComponent implements OnInit {
   
-
+@Input() userPost: any[] =[];
+@Output() passedEvent = new EventEmitter();
   
 constructor(
   private router: Router,
@@ -19,5 +20,8 @@ constructor(
     // this.router.queryParams.subscribe((params)=>{
     //   console.log(params);
     // })
+  }
+  PassEvent(){
+    this.passedEvent.emit(); 
   }
 }

@@ -1,1 +1,5 @@
-<p>user works!</p>
+<!-- <p>user works!</p> -->
+<div style ="margin-left: 30px; margin-top: 10px" *ngFor="let p of userPost">
+<p>{{p}}</p>
+</div>
+<button style="margin-left: 30;" class ="btn btn-sm btn-primary" (click)="PassEvent()">Pass</button>

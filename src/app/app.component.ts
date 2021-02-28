@@ -54,4 +54,7 @@ ngOnInit(){
       this.getlatestUser();
     })
   }
+  userEvent(){
+    alert("User event has been passed");
+  }
 }
