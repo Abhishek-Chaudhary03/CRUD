@@ -46,8 +46,15 @@
      <td><button (click)="editUser(user)" class="btn btn-warning">Edit</button></td>
      <td><button (click)="deleteUser(user)"class="btn btn-danger">Delete</button></td>
 
+
    </tr> 
   </tbody>
+
+  <a routerLink="user" >User</a>
+  <br>
+  <a routerLink="details" routerLinkActive= "active">Details</a>
+
 </table>
 
 </div>
+<router-outlet></router-outlet>
