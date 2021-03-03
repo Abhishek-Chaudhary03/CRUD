@@ -50,12 +50,14 @@
    </tr> 
   </tbody>
 
-  <a routerLink="user" >User</a>
-  <br>
-  <a routerLink="details" routerLinkActive= "active">Details</a>
+  
 
 </table>
 
 </div>
+<a routerLink="user" >User</a>
+  <br>
+  <a routerLink="details" routerLinkActive= "active">Details</a>
 <app-user [userPost]= "allUser"(passedEvent)="userEvent()"></app-user>
+<!-- <button (click) = "navigate()"> click to Navigate</button> -->
 <router-outlet></router-outlet>

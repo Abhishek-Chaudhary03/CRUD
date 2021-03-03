@@ -8,13 +8,6 @@
       "id": 2
     },
     {
-      "name": "Abhishek",
-      "mobile": "5638363552",
-      "email": "abhishek21chaudhary@gmail.com",
-      "password": "gsfugyu",
-      "id": 17
-    },
-    {
       "name": "Rahul",
       "mobile": "5638363552",
       "email": "abhishek21chaudhary@gmail.com",
@@ -27,13 +20,6 @@
       "email": "abhishek21chaudhary@gmail.com",
       "password": "ghvashhjs",
       "id": 20
-    },
-    {
-      "name": "Rahul",
-      "mobile": "5638363552",
-      "email": "dixit.ashutosh52@gmail.com",
-      "password": "ggvdshvhjds",
-      "id": 21
     }
   ]
 }

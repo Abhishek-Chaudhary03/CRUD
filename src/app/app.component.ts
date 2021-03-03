@@ -2,6 +2,7 @@
 
 import { CommonService } from './common.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,7 +21,7 @@ export class AppComponent implements OnInit  {
   }; 
   
  
-constructor(private commonService:CommonService){}
+constructor(private commonService:CommonService, private router: Router){}
 ngOnInit(){
   this.getlatestUser()
 }
@@ -57,4 +58,7 @@ ngOnInit(){
   userEvent(){
     alert("User event has been passed");
   }
+  // navigate(){
+  //   this.router.navigate(['other'],(state:{example: 'data'}));
+  // }
 }
