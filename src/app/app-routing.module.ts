@@ -7,7 +7,7 @@ import { ErrorComponent } from './error/error.component';
 import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
-  {path: '', component: AppComponent},
+  // {path: '', component: AppComponent},
   {path: 'user', component: UserComponent, canActivate: [AdminGuard]},
   {path: 'details', component: DetailsComponent},
   {path: '**', component: ErrorComponent}
