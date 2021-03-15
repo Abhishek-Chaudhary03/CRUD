@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { DetailsComponent } from './details/details.component';
 import { UserComponent } from './user/user.component';
 import { ErrorComponent } from './error/error.component';
-
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -18,7 +18,10 @@ import { ErrorComponent } from './error/error.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyACDRwEmDYeN9brSfnyS1znONEgtqnaGgU'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
