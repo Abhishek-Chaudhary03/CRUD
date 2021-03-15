@@ -9,6 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit  {
+  lat: number = 28.5355;
+  long: number = 77.3918;
+
   title = 'MyProject';
   allUser: any = "";
   isEdit= false;
