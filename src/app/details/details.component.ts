@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarOptions } from '@fullcalendar/angular';
 
 @Component({
   selector: 'app-details',
@@ -22,4 +23,7 @@ logInUser(){
     console.log("User Unauthorised");
   }
 }
+calendarOptions: CalendarOptions = {
+  initialView: 'dayGridMonth'
+};
 }

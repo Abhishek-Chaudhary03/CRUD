@@ -3,14 +3,15 @@
 import { CommonService } from './common.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit  {
-  lat: number = 28.5355;
-  long: number = 77.3918;
+  lat: number = 13.08;
+  long: number = 12.8318;
 
   title = 'MyProject';
   allUser: any = "";
@@ -64,4 +65,5 @@ ngOnInit(){
   // navigate(){
   //   this.router.navigate(['other'],(state:{example: 'data'}));
   // }
+  
 }

@@ -9,16 +9,29 @@ import { UserComponent } from './user/user.component';
 import { ErrorComponent } from './error/error.component';
 import { AgmCoreModule } from '@agm/core';
 
+import { CalenderComponent } from './calender/calender.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import interactionPlugin from '@fullcalendar/interaction'; // a plugin
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin
+
+
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin,
+ //interactionPlugin
+]);
+
+
 
 @NgModule({
   declarations: [ 
-    AppComponent, UserComponent, DetailsComponent, ErrorComponent
+    AppComponent, UserComponent, DetailsComponent, ErrorComponent, CalenderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    FullCalendarModule ,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyACDRwEmDYeN9brSfnyS1znONEgtqnaGgU'
     })
